@@ -17,7 +17,7 @@ export default function Landing () {
                 <div className="container">
 
                     <div className="filters-content">
-                        <Button to='/' label="Ofertas" className="offer"/>
+                        <Button to='/' label="Ofertas" offer="offer"/>
                         <Button to='/' label="Entradas" />
                         <Button to='/' label="Carnes" />
                         <Button to='/' label="Bebidas" />
