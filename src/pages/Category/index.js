@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
@@ -8,6 +8,9 @@ import './styles.css';
 import * as data from '../../data';
 
 export default function Category () {
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+    },[])
     return (
         <div id="page-landing">
             <Header />

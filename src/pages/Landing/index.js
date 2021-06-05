@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../../components/Header';
 import Card from '../../components/Card';
 import Button from '../../components/Button';
@@ -10,6 +10,10 @@ import './styles.css';
 import * as data from '../../data';
 
 export default function Landing () {
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+    },[])
+
     return (
         <div id="page-landing">
             <Header />
