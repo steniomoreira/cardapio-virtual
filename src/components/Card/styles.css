@@ -1,0 +1,101 @@
+.card {
+    position: relative;
+    width: 290px;
+    height: 450px;
+    background: var(--color-grey-light);
+    border-radius: 5px;
+    margin: 0 15px 30px;
+}
+
+.card .content-image {    
+    width: 290px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+.card .content-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-wrapper {
+    padding: 10px 15px 0;
+}
+
+.card .card-wrapper .card-item {
+    text-transform: capitalize;
+    font-weight: 400;    
+}
+
+.card .card-wrapper .card-item .unit {
+    color: var(--color-grey);
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 5px;
+}
+
+.card .card-wrapper .card-option {
+    text-decoration: none;
+    list-style: none;
+}
+
+.card .card-wrapper .card-option li {
+    position: relative;
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--color-grey-lighter);
+}
+
+.card .card-wrapper .card-option li:last-child {
+    border-bottom: inherit
+}
+
+.card .card-wrapper .card-option li .card-account {
+    position: absolute;
+    font-size: 16px;
+    font-weight: 700;
+    top: 0;
+    right: 0;    
+}
+
+.card .card-wrapper .card-option li h3 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.card .card-wrapper .card-option li h3 span{
+    font-weight: inherit;
+    font-size: 10px;
+    padding: 0 5px;
+    background: var(--color-secondary);
+    color: var(--color-white);
+
+    text-transform: uppercase;
+
+    border-radius: 20px;
+}
+
+.card .card-wrapper .card-option li p {
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--color-grey);
+}
+
+.card .link-plus {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 15px;
+}
+
+.card .link-plus .fa-plus {
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 10px 11px;
+    border-radius: 50% 50%;
+}

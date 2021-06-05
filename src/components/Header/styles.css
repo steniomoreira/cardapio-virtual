@@ -1,0 +1,123 @@
+#header-main {
+    width: 100%;
+    position: relative;
+    padding: 15px 0;
+}
+
+#header-main .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+}
+
+/* TOPO */
+#header-main #topo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#header-main #topo-header a img {
+    width: 100%;
+    max-width: 120px;
+}
+
+#header-main #menu {
+    width: 50px;
+    cursor: pointer;
+}
+
+/* WRAPPERS */
+#header-wrapper h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 65px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 65px;
+    padding: 15px 0;
+    color: var(--color-white);
+}
+
+#header-wrapper h2 span {
+    color: var(--color-primary);
+}
+
+#header-wrapper p {
+    font-family: Open Sans;
+    color: var(--color-white);
+    font-size: 18px;
+    text-align: center;
+    line-height: 25px;
+}
+
+#header-contact {
+    color: var(--color-white);
+    font-size: 25px;
+    font-weight: 300;
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+
+    display: flex;
+    align-items: center;
+}
+
+#header-contact i {
+    margin-right: 10px;
+    color: var(--color-primary);
+}
+
+#header-contact .fa-whatsapp {
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    right: -30px;
+}
+
+/* MEDIAS QUERIES */
+@media (min-width: 768px) {
+    #header-main {
+        background-image: url("../../assets/images/background-header.jpg");   
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 460px;
+    }
+    
+    #header-main::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        opacity: .6;
+    }
+}
+
+@media (max-width: 767px) {
+    #header-main #topo-header img {
+        max-width: 120px;
+    }
+
+    #header-main #topo-header {
+        justify-content: center;
+    }
+
+    #header-main #menu {
+        position: absolute;
+        top: 0;
+        right: 15px;
+        width: 35px;
+        cursor: pointer;
+    }
+
+    #header-wrapper,
+    #header-contact {
+        display: none;
+    }
+}

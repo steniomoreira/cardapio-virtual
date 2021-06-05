@@ -1,0 +1,91 @@
+#footer-main {
+    background-image: url("../../assets/images/quadro-de-aviso.svg");   
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 50px 0;
+}
+
+#footer-main,
+#footer-main .footer-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#footer-main .footer-wrapper {
+    flex-direction: row;
+}
+
+#footer-main .footer-wrapper .col-left,
+#footer-main .footer-wrapper .col-right {
+    width: 150px;    
+    font-size: 16px;    
+    color: var(--color-primary);
+}
+
+#footer-main .footer-wrapper .col-left {
+    border-right: 1px solid var(--color-primary);
+    margin: 0 5px 0 0;
+    padding: 0 15px 0 0;
+    text-align: right;
+}
+
+#footer-main .footer-wrapper .col-right {
+    border-left: 1px solid var(--color-primary);
+    margin: 0 0 0 5px;
+    padding: 0 0 0 15px;
+}
+
+#footer-main .footer-wrapper .col-left .hour,
+#footer-main .footer-wrapper .col-right .hour {
+    color: var(--color-white);
+    
+}
+
+#footer-main .footer-wrapper .col-left .hour span,
+#footer-main .footer-wrapper .col-right .hour span {
+    display: block;
+    font-size: 20px;
+    color: var(--color-primary);
+    
+}
+
+#footer-main address {
+    position: relative;
+    margin-top: 20px;
+    padding-bottom: 7px;
+    color: var(--color-white);
+    font-style: inherit;
+    font-size: 17px;
+    text-align: center;
+    line-height: 1.7;
+    border-bottom: 1px solid var(--color-primary);
+}
+
+#footer-main address .footer-contact i {
+    color: var(--color-primary);
+}
+
+#footer-main address .footer-contact .fa-whatsapp {
+    position: absolute;
+    font-size: 14px;
+    bottom: 25px;
+    right: -15px;
+}
+
+#footer-main .footer-social {
+    padding-top: 10px;
+}
+
+#footer-main .footer-social a {
+    margin-right: 20px;
+    color: var(--color-primary);
+    font-size: 21px;
+}
+
+#footer-main .footer-social a:last-child {
+    margin-right: 0;    
+}
