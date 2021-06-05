@@ -80,7 +80,7 @@
 /* MEDIAS QUERIES */
 @media (min-width: 768px) {
     #header-main {
-        background-image: url("../../assets/images/background-header.jpg");   
+        background-image: url("../../../assets/images/background-header.jpg");   
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;

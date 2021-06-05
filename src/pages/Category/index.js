@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Header from '../../components/Header';
+// import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
 import './styles.css';
@@ -13,7 +13,7 @@ export default function Category () {
     },[])
     return (
         <div id="page-landing">
-            <Header />
+            {/* <Header /> */}
             <main>                
                 <div className="container">
 
