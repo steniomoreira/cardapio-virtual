@@ -8,7 +8,7 @@ export default function Card({data}) {
   return (
     <div className="card">
         <div className="content-image">
-            <Link to='/'>
+            <Link to={`/${data.item}`}>
                 <img src={data.image} alt={data.item}/>
             </Link>
         </div>
@@ -23,7 +23,7 @@ export default function Card({data}) {
                 {data.especialItems.map((item, index) => (
                     <li key={index}>
                         <h3>
-                            Picanha Argentina &nbsp;
+                            {item.option} &nbsp;
                             {item.offer ? <span>Oferta</span> : ''} 
                         </h3>
                         <p>{item.description}</p>
@@ -33,8 +33,8 @@ export default function Card({data}) {
             </u>                            
         </div>
         <div className="link-plus">
-            <Link to='/' > <img src={LinkPlus} alt="Mais itens"/> </Link>
-            <Link to='/' > <i className="fas fa-plus"></i> </Link>
+            <Link to={`/${data.item}`} > <img src={LinkPlus} alt="Mais itens"/> </Link>
+            <Link to={`/${data.item}`} > <i className="fas fa-plus"></i> </Link>
         </div>                        
     </div>
   );

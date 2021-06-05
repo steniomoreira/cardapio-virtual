@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 import Card from '../../components/Card';
 import Button from '../../components/Button';
+import Footer from '../../components/Footer';
 
 import './styles.css';
 
@@ -17,11 +17,11 @@ export default function Landing () {
                 <div className="container">
 
                     <div className="filters-content">
-                        <Button to='/' label="Ofertas" offer="offer"/>
-                        <Button to='/' label="Entradas" />
-                        <Button to='/' label="Carnes" />
-                        <Button to='/' label="Bebidas" />
-                        <Button to='/' label="Pizzas" />
+                        <Button to='/ofertas' label="Ofertas" offer="offer"/>
+                        <Button to='/entradas' label="Entradas" />
+                        <Button to='/carnes' label="Carnes" />
+                        <Button to='/bebidas' label="Bebidas" />
+                        <Button to='/pizzas' label="Pizzas" />
                     </div>
 
                     <div className="card-content">
