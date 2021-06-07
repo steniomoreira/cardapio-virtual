@@ -1,10 +1,10 @@
-#landing-header-main {
+#header-main {
     width: 100%;
     position: relative;
     padding: 15px 0;
 }
 
-#landing-header-main .container {
+#header-main .container {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -12,18 +12,18 @@
 }
 
 /* TOPO */
-#landing-header-main #topo-header {
+#header-main #topo-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
-#landing-header-main #topo-header a img {
+#header-main #topo-header a img {
     width: 100%;
     max-width: 120px;
 }
 
-#landing-header-main #topo-header > img {
+#header-main #topo-header > img {
     width: 50px;
     cursor: pointer;
 }
@@ -78,33 +78,12 @@
 }
 
 /* MEDIAS QUERIES */
-@media (min-width: 768px) {
-    #landing-header-main {
-        background-image: url("../../../assets/images/background-header.jpg");   
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 460px;
-    }
-    
-    #landing-header-main::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #000;
-        opacity: .6;
-    }
-}
-
 @media (max-width: 767px) { 
-    #landing-header-main #topo-header {
+    #header-main #topo-header {
         justify-content: center;
     }
 
-    #landing-header-main #topo-header > img {
+    #header-main #topo-header > img {
         position: absolute;
         top: 0;
         right: 15px;

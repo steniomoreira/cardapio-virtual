@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
-// import Header from '../../components/Header';
+import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+
+import pizza from '../../assets/images/cards/pizza.jpg';
 
 import './styles.css';
 
@@ -12,12 +14,12 @@ export default function Category () {
         window.scrollTo(0, 0);
     },[])
     return (
-        <div id="page-landing">
-            {/* <Header /> */}
+        <div id="page-category">
+            <Header />
             <main>                
                 <div className="container">
 
-                    result
+                 result
                     
                 </div>
             </main>

@@ -1,10 +1,10 @@
-import React, { useLayoutEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Billboard from '../../../components/Billboard';
 
-import LogomarcaMobile from '../../../assets/images/logomarca-mobile.svg';
+import LogomarcaMobile from '../../../assets/images/logomarca-dark.svg';
 import Logomarca from '../../../assets/images/logomarca.svg';
-import MenuMobile from '../../../assets/images/icons/menu-mobile.svg';
+import MenuMobile from '../../../assets/images/icons/menu-dark.svg';
 import Menu from '../../../assets/images/icons/menu.svg';
 
 import './styles.css';
@@ -19,14 +19,14 @@ export default function Header() {
     });
 
     return (
-        <header id='header-main'>
+        <header id='landing-header-main'>
             <div className="container">
                 <div id="topo-header">
                     <Link to='/'>
                         <img src={logo} alt={process.env.REACT_APP_COMPANY} />
                     </Link>
 
-                    <img id="menu" src={menuIcon} alt="Nosso Menu"/>
+                    <img src={menuIcon} alt="Nosso Menu"/>
                 </div>
 
                 <div id="header-wrapper">
